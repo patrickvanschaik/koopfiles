@@ -1,0 +1,169 @@
+<html>
+
+<head>
+    <title>Koop Files</title>
+    <link type="text/css" rel="stylesheet" href="https://projectml.nl/css/app.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        [wire\:loading],
+        [wire\:loading\.delay],
+        [wire\:loading\.inline-block],
+        [wire\:loading\.inline],
+        [wire\:loading\.block],
+        [wire\:loading\.flex],
+        [wire\:loading\.table],
+        [wire\:loading\.grid] {
+            display: none;
+        }
+
+        [wire\:offline] {
+            display: none;
+        }
+
+        [wire\:dirty]:not(textarea):not(input):not(select) {
+            display: none;
+        }
+
+        input:-webkit-autofill,
+        select:-webkit-autofill,
+        textarea:-webkit-autofill {
+            animation-duration: 50000s;
+            animation-name: livewireautofill;
+        }
+
+        @keyframes livewireautofill {
+            from {}
+        }
+    </style>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+
+<body>
+    <div id="alert-container"></div>
+
+    <main>
+        <div
+            style="width: 100%; height: 100%; background-color: black; position: absolute; display: flex; align-items: center; justify-content: center">
+            <div>
+                <div wire:id="vafZGVe7wgCAkIOkltNc">
+
+                    <h1 style="text-align: center">SCHRIJF JE IN VOOR DE BETA.</h1>
+
+
+
+                    <form wire:submit.prevent="submitSignup">
+                        <input class="email-input" type="text" placeholder="E-mail" wire:model="email"
+                            wire:loading.class="loading" wire:target="submitSignup">
+                        <button wire:loading.class="loading" wire:target="submitSignup">
+                            <span class="material-icons">
+                                keyboard_arrow_right
+                            </span>
+                        </button>
+                    </form>
+
+                    <style>
+                        .email-input {
+                            background: none;
+                            border-radius: 0px;
+                            padding: 15px;
+                            height: auto;
+                            border-bottom: 1px solid white;
+                            outline: none;
+                            margin-right: 15px;
+
+                            flex-grow: 1;
+                            flex-shrink: 0;
+                            width: 250px;
+
+                            color: white;
+                        }
+
+                        .email-input.loading {
+                            pointer-events: none;
+                            opacity: .6;
+                        }
+
+                        form {
+                            display: flex;
+                            align-items: flex-end;
+                            width: 400px;
+                            max-width: calc(100% - 60px);
+                            margin: auto;
+                        }
+
+
+                        form button {
+                            flex-grow: 0;
+                            flex-shrink: 1;
+                            text-align: center;
+                            width: auto;
+                            display: flex;
+                            padding: 8px 15px;
+                        }
+
+                        form button.loading span {
+                            display: none;
+                        }
+
+                        form button.loading::before {
+                            margin-right: 0px;
+                        }
+
+                        .message {
+                            font-size: .8em;
+                            color: #C375FF;
+                        }
+
+                        strong {
+                            color: #C375FF;
+                        }
+
+                        @media screen and (max-width: 500px) {
+                            h1 {
+                                font-size: .8em;
+                            }
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+
+        <div style="position: absolute; bottom: 100px; width: 100%; display: flex; justify-content: center">
+            <div style="display: flex; flex-direction: column; align-items: center; font-size: .8em; text-align: center;"
+                class="title-font">
+                <span>© 2021 ALL RIGHTS RESERVED.</span>
+                <span>
+                    <a href="https://www.instagram.com/qucee/" target="_blank">@QUCEE</a> - <a
+                        href="https://www.instagram.com/nasnas/" target="_blank">@NASNAS</a> - <a
+                        href="https://www.instagram.com/chatmo/" target="_blank">@CHATMO</a>
+                </span>
+            </div>
+        </div>
+
+        <style>
+            h1 {
+                margin-bottom: 60px;
+            }
+
+            a {
+                color: #C375FF;
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        </style>
+    </main>
+    <script type="text/javascript" src="https://projectml.nl/js/app.js"></script>
+
+    <script src="/livewire/livewire.js?id=936e5d0fb0b76b631ba7" data-turbo-eval="false"
+        data-turbolinks-eval="false"></script>
+    <script data-turbo-eval="false"
+        data-turbolinks-eval="false">if (window.livewire) { console.warn('Livewire: It looks like Livewire\'s @livewireScripts JavaScript assets have already been loaded. Make sure you aren\'t loading them twice.') } window.livewire = new Livewire(); window.Livewire = window.livewire; window.livewire_app_url = ''; window.livewire_token = 'SNXzNxtgySJzoPRdIQCYkUby9S805BIRitptR9Nn';/* Make sure Livewire loads first. */if (window.Alpine) {/* Defer showing the warning so it doesn't get buried under downstream errors. */document.addEventListener("DOMContentLoaded", function () { setTimeout(function () { console.warn("Livewire: It looks like AlpineJS has already been loaded. Make sure Livewire\'s scripts are loaded before Alpine.\n\n Reference docs for more info: http://laravel-livewire.com/docs/alpine-js") }) }); }/* Make Alpine wait until Livewire is finished rendering to do its thing. */window.deferLoadingAlpine = function (callback) { window.addEventListener('livewire:load', function () { callback(); }); }; document.addEventListener("DOMContentLoaded", function () { window.livewire.start(); });</script>
+
+</body>
+
+</html>
